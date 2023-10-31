@@ -10,6 +10,11 @@ public class Menu {
         this.menu = menu;
     }
 
+    public List<MenuElement> getMenu() {
+        return menu;
+    }
+
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("Menu\n");
