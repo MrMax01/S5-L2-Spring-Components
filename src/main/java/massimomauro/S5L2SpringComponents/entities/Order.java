@@ -2,7 +2,6 @@ package massimomauro.S5L2SpringComponents.entities;
 
 import massimomauro.S5L2SpringComponents.Enums.OrderStatus;
 
-import javax.lang.model.element.Element;
 import java.time.LocalTime;
 import java.util.List;
 
@@ -16,7 +15,7 @@ public class Order {
     private int personNum;
     private double totalCost;
 
-    public Order(long id, Table table, List<MenuElement> orderList, OrderStatus status, LocalTime time, int personNum, double totalCost) {
+    public Order(long id, Table table, List<MenuElement> orderList, OrderStatus status, LocalTime time, int personNum) {
         this.id = id;
         this.table = table;
         this.orderList = orderList;
