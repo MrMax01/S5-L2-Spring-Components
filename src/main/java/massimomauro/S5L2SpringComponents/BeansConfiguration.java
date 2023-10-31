@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Configuration
@@ -44,13 +45,14 @@ public class BeansConfiguration {
     }
 
     @Bean
-    List<Table> getTable (){
+    List<Table> getTables (){
         List<Table> tables = new ArrayList<>();
-        tables.add(new Table(1, 5));
+        tables.add(new Table(1, 2));
         tables.add(new Table(2, 3));
-        tables.add(new Table(3, 2));
-        tables.add(new Table(4, 7));
-        tables.add(new Table(5, 4));
+        tables.add(new Table(3, 4));
+        tables.add(new Table(4, 5));
+        tables.add(new Table(5, 7));
+        //Collections.sort(tables);
         return tables;
     }
 

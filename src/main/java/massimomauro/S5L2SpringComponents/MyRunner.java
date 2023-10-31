@@ -13,5 +13,6 @@ public class MyRunner implements CommandLineRunner {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(S5L2SpringComponentsApplication.class);
 
         System.out.println(ctx.getBean("getMenu"));
+        ctx.close();
     }
 }

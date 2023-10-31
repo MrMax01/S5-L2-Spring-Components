@@ -15,7 +15,27 @@ public class Table {
 
     }
 
+    public int getSeatingCapacity() {
+        return seatingCapacity;
+    }
 
+    //@Override
+    /*public int compareTo(Table d) {
+        return this.seatingCapacity - d.getSeatingCapacity();
+    }
+    */
+
+    public void setStatus(TableStatus status) {
+        this.status = status;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public TableStatus getStatus() {
+        return status;
+    }
 
     @Override
     public String toString() {

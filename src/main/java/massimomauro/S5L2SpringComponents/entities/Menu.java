@@ -13,9 +13,10 @@ public class Menu {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("Menu\n");
-
+        int i=0;
         for (MenuElement item : menu) {
-            sb.append("  ").append(item).append("\n");
+            sb.append(" "+i+" ").append(item).append("\n");
+            i++;
         }
 
 
