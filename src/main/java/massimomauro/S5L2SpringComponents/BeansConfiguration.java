@@ -43,6 +43,16 @@ public class BeansConfiguration {
         return new Menu(menu);
     }
 
+    @Bean
+    List<Table> getTable (){
+        List<Table> tables = new ArrayList<>();
+        tables.add(new Table(1, 5));
+        tables.add(new Table(2, 3));
+        tables.add(new Table(3, 2));
+        tables.add(new Table(4, 7));
+        tables.add(new Table(5, 4));
+        return tables;
+    }
 
 
 }
